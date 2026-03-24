@@ -1,0 +1,87 @@
+/* BOTÓN */
+.donate-btn {
+    position: fixed;
+    left: 0%;
+    top: 250px;
+
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 30px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(0,198,255,0.5);
+}
+
+.donate-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(0,198,255,0.8);
+}
+
+/* MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+/* CONTENIDO */
+.modal-content {
+    background: rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    margin: 10% auto;
+    padding: 20px;
+    width: 200px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+/* CERRAR */
+.close {
+    float: right;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* INPUT */
+.modal-content input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 10px;
+    border: none;
+}
+
+/* BOTÓN DONAR */
+.modal-content button {
+    background: #00c6ff;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+/* MENSAJE */
+#mensaje {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .donate-btn {
+        padding: 10px 15px;
+        font-size: 14px;
+        right: 15px;
+        bottom: 15px;
+    }
+}

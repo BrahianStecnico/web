@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Técnicos</title>
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="estilospay.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+<nav class="navbar">
+        <img src="imagenes/compuerta.jpeg" alt="" class="logo">
+    <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
+
+<div class="container">
+    <h1>Servicios Técnicos </h1>
+
+    <div class="carousel">
+        <div class="slides" id="slides">
+
+            <div class="slide slide1">
+                <div class="overlay">
+                    <h2>Instalación de Sistemas Operativos</h2>
+                    <p>Instalamos Windows, Linux y otros sistemas con configuración completa y optimizada.</p>
+                </div>
+            </div>
+
+            <div class="slide slide2">
+                <div class="overlay">
+                    <h2>Recuperación de Contraseñas</h2>
+                    <p>Recuperamos acceso a equipos bloqueados de forma segura y confiable.</p>
+                </div>
+            </div>
+
+            <div class="slide slide3">
+                <div class="overlay">
+                    <h2>Formateo de Disco Duro</h2>
+                    <p>Eliminamos virus, errores y dejamos tu equipo como nuevo.</p>
+                </div>
+            </div>
+
+            <div class="slide slide4">
+                <div class="overlay">
+                    <h2>Mantenimiento de PCs y Laptops</h2>
+                    <p>Limpieza, optimización y mejora del rendimiento de tu equipo.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="prevSlide()">⟨</button>
+        <button onclick="nextSlide()">⟩</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<div class="menu-lateral">
+    <ul>
+        <li>
+            <a href="https://www.instagram.com/acev_edo62?utm_source=qr&igsh=dzBjcmozMzR1eHRi" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.youtube.com/@Compuertatecnologica/shorts" target="_blank" class="youtube">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </li>
+        <li>
+            <a href="https://www.tiktok.com/@nejihzjn65q?_r=1&_t=ZS-94x00tinlvk" target="_blank" class="tiktok">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </li>
+        <li>
+            <a href="mailto:tuemail@gmail.com" class="gmail">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </li>
+    </ul>
+
+
+
+<!-- BOTÓN -->
+ 
+    <button class="donate-btn" onclick="abrirModal()">
+    💙 Donar Ahora
+    </button>
+
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+
+        <span class="close" onclick="cerrarModal()">&times;</span>
+
+        <h2>Apoya nuestro proyecto</h2>
+
+        <input type="number" id="monto" placeholder="Monto en USD">
+
+     <a href="https://www.paypal.com/donate?hosted_button_id=TU_ID" target="_blank">
+        <button onclick="donar()">Donar</button>
+     </a>
+
+        <p id="mensaje"></p>
+
+    </div>
+</div>
+
+
+
+</div>
+
+
+</body>
+</html>
